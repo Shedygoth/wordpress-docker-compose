@@ -45,3 +45,7 @@ services:
 
 volumes:
   db_data:
+networks:                                          #Nginx-proxy line that will rediret our traffic to the Nginx 
+  default:
+    external:
+      name: nginx-proxy
